@@ -1,0 +1,68 @@
+/* Step Animation Definition */
+@keyframes loaderStepIn {
+  0% {
+    opacity: 0;
+    transform: translateY(12px) scale(0.95);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+/* Sequential Step Delays */
+.loader-step-1 {
+  opacity: 0;
+  animation: loaderStepIn 0.5s ease-out forwards 0.2s;
+}
+
+.loader-step-2 {
+  opacity: 0;
+  animation: loaderStepIn 0.5s ease-out forwards 0.7s;
+}
+
+.loader-step-3 {
+  opacity: 0;
+  animation: loaderStepIn 0.5s ease-out forwards 1.2s;
+}
+
+.loader-step-4 {
+  opacity: 0;
+  animation: loaderStepIn 0.5s ease-out forwards 1.7s;
+}
+
+/* Custom Text Highlight Selection */
+::selection {
+  background-color: #06b6d4;
+  color: #0b0f17;
+}
+/* Smooth Up-Down Floating Animation for Robot */
+@keyframes robotFloat {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-14px);
+  }
+}
+
+.robot-container {
+  animation: robotFloat 3s ease-in-out infinite;
+}
+
+/* Waving Hand "Hi" Animation */
+@keyframes handWave {
+  0%, 100% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(-30deg);
+  }
+  75% {
+    transform: rotate(20deg);
+  }
+}
+
+.wave-hand {
+  animation: handWave 1.2s ease-in-out infinite;
+}

@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eiman Fatima | Frontend Developer</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- FontAwesome Icons CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-[#0B0F17] text-slate-100 font-sans min-h-screen relative overflow-x-hidden">
+
+  <!-- 1. SEQUENTIAL INTRO LOADER SCREEN -->
+  <div id="loader" class="fixed inset-0 z-50 bg-[#0B0F17] flex flex-col items-center justify-center transition-opacity duration-700">
+    <div class="flex flex-col items-center justify-center text-cyan-400">
+      
+      <!-- Step 1: Laptop Icon -->
+      <div class="loader-step-1 text-5xl mb-3">
+        <i class="fa-solid fa-laptop-code"></i>
+      </div>
+      
+      <!-- Step 2: MY PORTFOLIO Text -->
+      <h1 class="loader-step-2 text-2xl font-bold tracking-widest uppercase font-mono my-2 text-cyan-400">
+        MY PORTFOLIO
+      </h1>
+
+      <!-- Step 3: Icons Row -->
+      <div class="loader-step-3 flex gap-4 text-xl my-2 text-cyan-400">
+        <i class="fa-brands fa-github"></i>
+        <i class="fa-solid fa-code"></i>
+        <i class="fa-solid fa-user"></i>
+      </div>
+
+      <!-- Step 4: Designed by Eiman -->
+      <p class="loader-step-4 text-xs font-mono mt-2 text-cyan-400">
+        Designed by Eiman
+      </p>
+
+    </div>
+  </div>
+
+  <!-- 2. FLOATING NAVBAR -->
+  <nav class="fixed top-6 left-1/2 -translate-x-1/2 z-40 bg-slate-900/80 border border-slate-800/80 backdrop-blur-md px-6 py-3 rounded-full flex items-center gap-6 text-sm font-medium shadow-xl">
+    <a href="#home" class="hover:text-cyan-400 transition-colors flex items-center gap-2"><i class="fa-solid fa-house text-xs"></i> Home</a>
+    <a href="#about" class="hover:text-cyan-400 transition-colors flex items-center gap-2"><i class="fa-solid fa-user text-xs"></i> About</a>
+    <a href="#projects" class="hover:text-cyan-400 transition-colors flex items-center gap-2"><i class="fa-solid fa-briefcase text-xs"></i> Projects</a>
+    <a href="#certs" class="hover:text-cyan-400 transition-colors flex items-center gap-2"><i class="fa-solid fa-certificate text-xs"></i> Certs</a>
+    <a href="#services" class="px-2.5 py-1.5 rounded-full hover:text-cyan-400 hover:bg-slate-800/60 transition-colors">Services</a>
+    <a href="#contact" class="hover:text-cyan-400 transition-colors flex items-center gap-2"><i class="fa-solid fa-envelope text-xs"></i> Contact</a>
+  </nav>
+
+  <!-- 3. HERO SECTION WITH 3D ROBOT & TYPING ANIMATION -->
+  <section id="home" class="min-h-screen pt-36 pb-16 px-6 max-w-6xl mx-auto flex items-center">
+    <div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-center w-full">
+      
+      <!-- Left Side: Bio, Buttons & Social Icons -->
+      <div class="md:col-span-7 space-y-6">
+        <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-slate-900 border border-slate-800 text-xs font-mono text-cyan-400">
+          <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+          <span>Available for Remote Work</span>
+        </div>
+
+        <h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight text-white">
+          Hi, I'm <span class="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500">Eiman</span>
+        </h1>
+
+        <div class="text-2xl sm:text-3xl font-semibold text-slate-300 font-mono h-10 flex items-center">
+          <span id="typing-text"></span><span class="animate-pulse text-cyan-400">|</span>
+        </div>
+
+        <p class="text-slate-400 text-base sm:text-lg max-w-lg leading-relaxed">
+          Software Engineering student passionate about building clean, interactive, and modern web applications with precision frontend design.
+        </p>
+
+        <div class="flex flex-wrap gap-4 pt-2">
+          <a href="#contact" class="px-6 py-3 rounded-xl bg-gradient-to-r from-cyan-500 to-blue-600 text-white font-semibold text-sm shadow-lg shadow-cyan-500/20 hover:opacity-90 transition-all flex items-center gap-2">
+            <i class="fa-solid fa-paper-plane"></i> Hire Me
+          </a>
+         <a href="assets/EIMAN-CV.pdf#view=Fit" target="_blank" class="px-6 py-3 rounded-xl bg-slate-900 border border-slate-700 hover:border-cyan-400 text-white font-medium transition-all flex items-center gap-2">
+    <i class="fa-solid fa-eye"></i> View CV
+</a>
+        </div>
+
+        <!-- Social Profile Links -->
+        <!-- Social Profile Links -->
+<div class="flex items-center gap-4 text-slate-400 pt-4 text-xl">
+  <a href="https://github.com/Eiman-2026" target="_blank" class="hover:text-cyan-400" title="GitHub">
+    <i class="fa-brands fa-github"></i>
+  </a>
+  <a href="https://www.linkedin.com/in/eiman-fatima-6563b5411" target="_blank" class="hover:text-cyan-400" title="LinkedIn">
+    <i class="fa-brands fa-linkedin"></i>
+  </a>
+  <a href="mailto:eiman749@gmail.com" class="hover:text-cyan-400" title="Email">
+    <i class="fa-solid fa-envelope"></i>
+  </a>
+</div>
+      </div>
+
+      <!-- Right Side: Cute Free-Floating & Waving Robot -->
+      <div class="md:col-span-5 flex justify-center items-center relative py-6">
+        
+        <!-- Subtle Background Glow -->
+        <div class="absolute w-64 h-64 bg-cyan-500/15 rounded-full blur-3xl pointer-events-none"></div>
+        <div class="absolute w-48 h-48 bg-blue-500/15 rounded-full blur-2xl pointer-events-none"></div>
+
+        <!-- Cute Floating Robot Wrapper -->
+        <div class="robot-container relative z-10 flex flex-col items-center">
+          
+          <!-- Antenna -->
+          <div class="flex flex-col items-center">
+            <div class="w-3 h-3 bg-cyan-400 rounded-full animate-ping"></div>
+            <div class="w-1 h-3 bg-cyan-500"></div>
+          </div>
+
+          <!-- Robot Head -->
+          <div class="w-24 h-16 bg-slate-800 border-2 border-cyan-400/80 rounded-2xl flex flex-col items-center justify-center shadow-lg shadow-cyan-500/30 relative">
+            <!-- Ears -->
+            <div class="absolute -left-2 w-2 h-4 bg-cyan-500 rounded-l-md"></div>
+            <div class="absolute -right-2 w-2 h-4 bg-cyan-500 rounded-r-md"></div>
+            
+            <!-- Eyes Screen -->
+            <div class="w-16 h-8 bg-slate-950 rounded-lg flex items-center justify-center gap-3">
+              <span class="w-3.5 h-3.5 rounded-full bg-cyan-400 animate-pulse shadow-sm shadow-cyan-400"></span>
+              <span class="w-3.5 h-3.5 rounded-full bg-cyan-400 animate-pulse shadow-sm shadow-cyan-400"></span>
+            </div>
+            <!-- Cute Mouth -->
+            <div class="w-8 h-1 bg-emerald-400 rounded-full mt-1.5"></div>
+          </div>
+
+          <!-- Neck -->
+          <div class="w-6 h-2 bg-slate-700"></div>
+
+          <!-- Body & Hands Container -->
+          <div class="relative flex items-center">
+            
+            <!-- Left Hand -->
+            <div class="absolute -left-5 top-2 w-4 h-9 border-l-4 border-b-4 border-cyan-500 rounded-bl-xl origin-top rotate-12"></div>
+
+            <!-- Robot Chest Body -->
+            <div class="w-20 h-20 bg-slate-800 border-2 border-slate-700 rounded-2xl flex flex-col items-center justify-center shadow-md relative z-10">
+              <div class="w-8 h-8 rounded-lg bg-slate-900 border border-cyan-500/50 flex items-center justify-center text-cyan-400 text-xs font-mono font-bold">
+                &lt;/&gt;
+              </div>
+              <div class="flex gap-1.5 mt-2">
+                <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
+                <span class="w-1.5 h-1.5 rounded-full bg-cyan-400"></span>
+              </div>
+            </div>
+
+            <!-- Right Hand (Waving "Hi") -->
+            <div class="absolute -right-7 top-1 w-5 h-12 border-r-4 border-t-4 border-cyan-400 rounded-tr-xl origin-bottom-left wave-hand">
+              <div class="absolute -top-2 -right-1 w-3 h-3 bg-cyan-400 rounded-full shadow-sm shadow-cyan-400"></div>
+            </div>
+
+          </div>
+
+          <!-- Soft Floor Shadow -->
+          <div class="w-20 h-2.5 bg-cyan-500/20 rounded-full blur-sm mt-5 animate-pulse"></div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
+<!-- 4. ABOUT ME SECTION -->
+  <section id="about" class="py-25 px-6 max-w-6xl mx-auto border-t border-slate-800/60 scroll-mt-20">
+    
+    <!-- Centered Section Title & Header -->
+    <div class="text-center max-w-3xl mx-auto space-y-3 mb-8">
+      <span class="text-xs font-mono tracking-widest text-cyan-400 uppercase bg-cyan-950/60 border border-cyan-800/50 px-3.5 py-1.5 rounded-full inline-block">
+        &lt;About Me /&gt;
+      </span>
+      <h2 class="text-3xl sm:text-5xl font-extrabold text-white tracking-tight pt-2">
+        Building Meaningful <span class="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500">Digital Experiences</span>
+      </h2>
+      <div class="w-16 h-1 bg-gradient-to-r from-cyan-400 to-blue-500 mx-auto rounded-full mt-3"></div>
+    </div>
+
+    <!-- Centered Bio Text -->
+    <div class="max-w-2xl mx-auto text-center text-slate-300 space-y-3 text-base leading-relaxed mb-12">
+      <p>
+        I am a passionate Software Engineering student dedicated to building clean, interactive, and user-centered digital interfaces.
+      </p>
+      <p class="text-slate-400 text-sm">
+        My focus is on transforming creative ideas into efficient code using modern web technologies, maintaining precision in UI design and responsive layouts.
+      </p>
+    </div>
+
+    <!-- Subheading: WHAT DRIVES ME (Cyan/Blue Gradient Highlight) -->
+    <div class="text-center mb-8">
+      <h3 class="inline-block text-sm font-mono tracking-widest uppercase font-bold text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-400 border-b border-cyan-500/30 pb-1">
+        ✨ What Drives Me
+      </h3>
+    </div>
+
+    <!-- Enhanced Glow Cards Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      
+      <!-- Card 1: Languages -->
+      <div class="bg-slate-900/80 border border-slate-800/90 p-8 rounded-2xl backdrop-blur-md hover:border-cyan-400/80 hover:shadow-[0_0_25px_rgba(6,182,212,0.2)] hover:-translate-y-1.5 transition-all duration-300 group cursor-pointer">
+        <div class="w-12 h-12 rounded-xl bg-cyan-500/10 border border-cyan-500/30 flex items-center justify-center text-cyan-400 text-xl mb-5 group-hover:bg-cyan-400 group-hover:text-slate-950 transition-all shadow-sm shadow-cyan-500/20">
+          <i class="fa-solid fa-code"></i>
+        </div>
+        <h4 class="text-lg font-bold text-white mb-2 group-hover:text-cyan-400 transition-colors">Languages</h4>
+        <p class="text-slate-400 text-xs font-mono leading-relaxed">
+          HTML5, CSS3, JavaScript (ES6+), Tailwind CSS
+        </p>
+      </div>
+
+      <!-- Card 2: Education -->
+      <div class="bg-slate-900/80 border border-slate-800/90 p-8 rounded-2xl backdrop-blur-md hover:border-cyan-400/80 hover:shadow-[0_0_25px_rgba(6,182,212,0.2)] hover:-translate-y-1.5 transition-all duration-300 group cursor-pointer">
+        <div class="w-12 h-12 rounded-xl bg-cyan-500/10 border border-cyan-500/30 flex items-center justify-center text-cyan-400 text-xl mb-5 group-hover:bg-cyan-400 group-hover:text-slate-950 transition-all shadow-sm shadow-cyan-500/20">
+          <i class="fa-solid fa-graduation-cap"></i>
+        </div>
+        <h4 class="text-lg font-bold text-white mb-2 group-hover:text-cyan-400 transition-colors">Education</h4>
+        <p class="text-slate-400 text-xs leading-relaxed">
+          BS Software Engineering Student
+        </p>
+      </div>
+
+      <!-- Card 3: Projects -->
+      <div class="bg-slate-900/80 border border-slate-800/90 p-8 rounded-2xl backdrop-blur-md hover:border-cyan-400/80 hover:shadow-[0_0_25px_rgba(6,182,212,0.2)] hover:-translate-y-1.5 transition-all duration-300 group cursor-pointer">
+        <div class="w-12 h-12 rounded-xl bg-cyan-500/10 border border-cyan-500/30 flex items-center justify-center text-cyan-400 text-xl mb-5 group-hover:bg-cyan-400 group-hover:text-slate-950 transition-all shadow-sm shadow-cyan-500/20">
+          <i class="fa-solid fa-briefcase"></i>
+        </div>
+        <h4 class="text-lg font-bold text-white mb-2 group-hover:text-cyan-400 transition-colors">Projects</h4>
+        <p class="text-slate-400 text-xs leading-relaxed">
+          Built 5+ Interactive Web Projects
+        </p>
+      </div>
+
+    </div>
+
+  </section>
+  <!-- 5. PROJECTS SECTION -->
+  <section id="projects" class="py-16 px-6 max-w-6xl mx-auto border-t border-slate-800/60 scroll-mt-20">
+    
+    <!-- Section Header -->
+    <div class="text-center max-w-3xl mx-auto space-y-2 mb-12">
+      <span class="text-xs font-mono tracking-widest text-cyan-400 uppercase bg-cyan-950/60 border border-cyan-800/50 px-3.5 py-1.5 rounded-full inline-block">
+        &lt;Featured Work /&gt;
+      </span>
+      <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight pt-1">
+        My Featured <span class="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500">Projects</span>
+      </h2>
+      <div class="w-12 h-1 bg-gradient-to-r from-cyan-400 to-blue-500 mx-auto rounded-full mt-2"></div>
+      <p class="text-slate-400 text-xs sm:text-sm pt-2">
+        A showcase of my recent web development work featuring interactive UI and responsive design.
+      </p>
+    </div>
+
+    <!-- Projects Grid (3 Columns) -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      
+      <!-- Project 1: TerraGlow -->
+      <div class="bg-slate-900/80 border border-slate-800/90 rounded-2xl overflow-hidden hover:border-cyan-400/80 hover:shadow-[0_0_25px_rgba(6,182,212,0.15)] hover:-translate-y-1 transition-all duration-300 group flex flex-col justify-between">
+        <!-- Screenshot Path Updated -->
+        <div class="relative aspect-video bg-slate-950 overflow-hidden border-b border-slate-800">
+    <img src="assets/projects/Terraglow.jpg" alt="TerraGlow Screenshot" class="w-full h-full object-contain p-2">
+        </div>
+
+        <!-- Content -->
+        <div class="p-6 flex-1 flex flex-col justify-between">
+          <div>
+            <h3 class="text-xl font-bold text-white mb-2 group-hover:text-cyan-400 transition-colors">TerraGlow</h3>
+            <p class="text-slate-400 text-xs leading-relaxed mb-4">
+              Modern organic e-commerce store featuring skincare products, customer reviews, and clean landing UI.
+            </p>
+          </div>
+          <div>
+            <div class="flex flex-wrap gap-2 mb-4">
+              <span class="text-[10px] font-mono px-2.5 py-1 rounded-md bg-slate-800 text-cyan-300 border border-slate-700">HTML5</span>
+              <span class="text-[10px] font-mono px-2.5 py-1 rounded-md bg-slate-800 text-cyan-300 border border-slate-700">CSS3</span>
+              <span class="text-[10px] font-mono px-2.5 py-1 rounded-md bg-slate-800 text-cyan-300 border border-slate-700">JavaScript</span>
+            </div>
+            <!-- Links -->
+            <div class="flex items-center gap-4 pt-3 border-t border-slate-800/80 text-xs font-semibold">
+              <a href="https://github.com/Eiman-2026/TerraGlow-Skincare.git" target="_blank" class="text-slate-400 hover:text-cyan-400 flex items-center gap-1.5 transition-colors">
+                <i class="fa-brands fa-github text-sm"></i> Code
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 2: Binge Box -->
+      <div class="bg-slate-900/80 border border-slate-800/90 rounded-2xl overflow-hidden hover:border-cyan-400/80 hover:shadow-[0_0_25px_rgba(6,182,212,0.15)] hover:-translate-y-1 transition-all duration-300 group flex flex-col justify-between">
+        <!-- Screenshot Path Updated -->
+        <div class="relative aspect-video bg-slate-950 overflow-hidden border-b border-slate-800">
+    <img src="assets/projects/bingebox.jpg" alt="Binge Box Screenshot" class="w-full h-full object-contain p-2">
+        </div>
+
+        <!-- Content -->
+        <div class="p-6 flex-1 flex flex-col justify-between">
+          <div>
+            <h3 class="text-xl font-bold text-white mb-2 group-hover:text-cyan-400 transition-colors">Binge Box</h3>
+            <p class="text-slate-400 text-xs leading-relaxed mb-4">
+              Interactive entertainment web app showcasing trending movies, categories, and wishlist functionality.
+            </p>
+          </div>
+          <div>
+            <div class="flex flex-wrap gap-2 mb-4">
+              <span class="text-[10px] font-mono px-2.5 py-1 rounded-md bg-slate-800 text-cyan-300 border border-slate-700">HTML5</span>
+              <span class="text-[10px] font-mono px-2.5 py-1 rounded-md bg-slate-800 text-cyan-300 border border-slate-700">tailwindcss</span>
+              <span class="text-[10px] font-mono px-2.5 py-1 rounded-md bg-slate-800 text-cyan-300 border border-slate-700">JavaScript</span>
+            </div>
+            <!-- Links -->
+            <div class="flex items-center gap-4 pt-3 border-t border-slate-800/80 text-xs font-semibold">
+              <a href="https://github.com/Eiman-2026/binge-box" target="_blank" class="text-slate-400 hover:text-cyan-400 flex items-center gap-1.5 transition-colors">
+                <i class="fa-brands fa-github text-sm"></i> Code
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 3: The Cozy Bean -->
+      <div class="bg-slate-900/80 border border-slate-800/90 rounded-2xl overflow-hidden hover:border-cyan-400/80 hover:shadow-[0_0_25px_rgba(6,182,212,0.15)] hover:-translate-y-1 transition-all duration-300 group flex flex-col justify-between">
+        <!-- Screenshot Path Updated -->
+        <div class="relative aspect-video bg-slate-950 overflow-hidden border-b border-slate-800">
+    <img src="assets/projects/cozybean.jpg" alt="The Cozy Bean Screenshot" class="w-full h-full object-contain p-2">
+        </div>
+
+        <!-- Content -->
+        <div class="p-6 flex-1 flex flex-col justify-between">
+          <div>
+            <h3 class="text-xl font-bold text-white mb-2 group-hover:text-cyan-400 transition-colors">The Cozy Bean</h3>
+            <p class="text-slate-400 text-xs leading-relaxed mb-4">
+              Aesthetic coffee shop landing page featuring menu sections, special offers, and warm UI aesthetic.
+            </p>
+          </div>
+          <div>
+            <div class="flex flex-wrap gap-2 mb-4">
+              <span class="text-[10px] font-mono px-2.5 py-1 rounded-md bg-slate-800 text-cyan-300 border border-slate-700">HTML5</span>
+              <span class="text-[10px] font-mono px-2.5 py-1 rounded-md bg-slate-800 text-cyan-300 border border-slate-700">CSS5</span>
+            </div>
+            <!-- Links -->
+            <div class="flex items-center gap-4 pt-3 border-t border-slate-800/80 text-xs font-semibold">
+              <a href="https://github.com/Eiman-2026/the-cozy-bean" target="_blank" class="text-slate-400 hover:text-cyan-400 flex items-center gap-1.5 transition-colors">
+                <i class="fa-brands fa-github text-sm"></i> Code
+              </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+  <!-- 6. CERTIFICATES SECTION -->
+  <section id="certs" class="py-16 px-6 max-w-6xl mx-auto border-t border-slate-800/60 scroll-mt-20">
+    
+    <!-- Section Header -->
+    <div class="text-center max-w-3xl mx-auto space-y-2 mb-12">
+      <span class="text-xs font-mono tracking-widest text-cyan-400 uppercase bg-cyan-950/60 border border-cyan-800/50 px-3.5 py-1.5 rounded-full inline-block">
+        &lt;Credentials /&gt;
+      </span>
+      <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight pt-1">
+        Licenses & <span class="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500">Certifications</span>
+      </h2>
+      <div class="w-12 h-1 bg-gradient-to-r from-cyan-400 to-blue-500 mx-auto rounded-full mt-2"></div>
+      <p class="text-slate-400 text-xs sm:text-sm pt-2">
+        Verified professional achievements and course completions in Web Development and AI.
+      </p>
+    </div>
+
+    <!-- Certificates Grid (4 Columns) -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+      
+      <!-- Certificate 1: CodeKro Frontend -->
+      <div class="bg-slate-900/80 border border-slate-800/90 rounded-2xl overflow-hidden hover:border-cyan-400/80 hover:shadow-[0_0_25px_rgba(6,182,212,0.15)] hover:-translate-y-1 transition-all duration-300 group flex flex-col justify-between">
+        <div class="w-full p-3 bg-slate-950/60 flex items-center justify-center border-b border-slate-800">
+    <img src="assets/certificates/codekro.jpg" alt="Frontend Development Certificate" class="w-full h-auto rounded-lg shadow-md border border-slate-800/50">
+        </div>
+        <div class="p-5 flex-1 flex flex-col justify-between">
+          <div>
+            <span class="text-[10px] font-mono text-cyan-400 bg-cyan-950/80 border border-cyan-800/50 px-2 py-0.5 rounded">Issued Aug 2026</span>
+            <h3 class="text-base font-bold text-white mt-2 mb-1 group-hover:text-cyan-400 transition-colors">Frontend Development Program</h3>
+            <p class="text-slate-400 text-xs font-medium mb-3">CodeKro Institute</p>
+          </div>
+          <div class="pt-3 border-t border-slate-800/80 text-[10px] text-slate-400 font-mono">
+            ID: CK-2026-WEBDEV-264
+          </div>
+        </div>
+      </div>
+
+      <!-- Certificate 2: Cisco Python -->
+      <div class="bg-slate-900/80 border border-slate-800/90 rounded-2xl overflow-hidden hover:border-cyan-400/80 hover:shadow-[0_0_25px_rgba(6,182,212,0.15)] hover:-translate-y-1 transition-all duration-300 group flex flex-col justify-between">
+        <div class="w-full p-3 bg-slate-950/60 flex items-center justify-center border-b border-slate-800">
+    <img src="assets/certificates/cisco.jpg" alt="Python Certificate" class="w-full h-auto rounded-lg shadow-md border border-slate-800/50">
+        </div>
+        <div class="p-5 flex-1 flex flex-col justify-between">
+          <div>
+            <span class="text-[10px] font-mono text-cyan-400 bg-cyan-950/80 border border-cyan-800/50 px-2 py-0.5 rounded">Issued Jul 2026</span>
+            <h3 class="text-base font-bold text-white mt-2 mb-1 group-hover:text-cyan-400 transition-colors">Python Essentials 1</h3>
+            <p class="text-slate-400 text-xs font-medium mb-3">Cisco Networking Academy</p>
+          </div>
+          <div class="pt-3 border-t border-slate-800/80 text-[10px] text-slate-400 font-mono truncate">
+            ID: 2dccdbb2-a484...
+          </div>
+        </div>
+      </div>
+
+      <!-- Certificate 3: UNESCO Ethics of AI -->
+      <div class="bg-slate-900/80 border border-slate-800/90 rounded-2xl overflow-hidden hover:border-cyan-400/80 hover:shadow-[0_0_25px_rgba(6,182,212,0.15)] hover:-translate-y-1 transition-all duration-300 group flex flex-col justify-between">
+        <div class="w-full p-3 bg-slate-950/60 flex items-center justify-center border-b border-slate-800">
+    <img src="assets/certificates/unesco.jpg" alt="UNESCO Ethics of AI Certificate" class="w-full h-auto rounded-lg shadow-md border border-slate-800/50">
+        </div>
+        <div class="p-5 flex-1 flex flex-col justify-between">
+          <div>
+            <span class="text-[10px] font-mono text-cyan-400 bg-cyan-950/80 border border-cyan-800/50 px-2 py-0.5 rounded">Issued Sep 2026</span>
+            <h3 class="text-base font-bold text-white mt-2 mb-1 group-hover:text-cyan-400 transition-colors">Global MOOC Ethics of AI</h3>
+            <p class="text-slate-400 text-xs font-medium mb-3">UNESCO & Coursera</p>
+          </div>
+          <div class="pt-3 border-t border-slate-800/80 text-[10px] text-slate-400 font-mono">
+            ID: 89QHVZYPV5HV
+          </div>
+        </div>
+      </div>
+
+      <!-- Certificate 4: Elements of AI -->
+      <div class="bg-slate-900/80 border border-slate-800/90 rounded-2xl overflow-hidden hover:border-cyan-400/80 hover:shadow-[0_0_25px_rgba(6,182,212,0.15)] hover:-translate-y-1 transition-all duration-300 group flex flex-col justify-between">
+        <div class="w-full p-3 bg-slate-950/60 flex items-center justify-center border-b border-slate-800">
+    <img src="assets/certificates/elements.jpg" alt="Elements of AI Certificate" class="w-full h-auto rounded-lg shadow-md border border-slate-800/50">
+        </div>
+        <div class="p-5 flex-1 flex flex-col justify-between">
+          <div>
+            <span class="text-[10px] font-mono text-cyan-400 bg-cyan-950/80 border border-cyan-800/50 px-2 py-0.5 rounded">Issued Aug 2026</span>
+            <h3 class="text-base font-bold text-white mt-2 mb-1 group-hover:text-cyan-400 transition-colors">Elements of AI</h3>
+            <p class="text-slate-400 text-xs font-medium mb-3">MinnaLearn & Univ. of Helsinki</p>
+          </div>
+          <div class="pt-3 border-t border-slate-800/80 text-[10px] text-slate-400 font-mono">
+            2 ECTS Credits Course
+          </div>
+        </div>
+      </div>
+
+    </div>
+<section id="services" class="w-full py-16 px-6 border-t border-slate-800/60 scroll-mt-20">
+  <div class="max-w-7xl mx-auto text-center">
+    <span class="text-xs font-semibold uppercase tracking-widest text-blue-400 bg-blue-950/60 border border-blue-800/50 px-3.5 py-1.5 rounded-full inline-block mb-3">
+      SERVICES
+    </span>
+    
+    <h2 class="text-3xl sm:text-4xl font-extrabold text-white mb-12">
+      Our Features & Services
+    </h2>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+      
+      <div class="bg-slate-900 border border-slate-800 rounded-2xl p-6 text-center transition-all duration-300 hover:bg-blue-600 hover:border-blue-500 group cursor-pointer shadow-lg">
+        <div class="w-14 h-14 bg-blue-950 border border-blue-800/60 rounded-full flex items-center justify-center text-blue-400 text-2xl mx-auto mb-4 group-hover:bg-white group-hover:text-blue-600 transition-colors">
+          <i class="fa-solid fa-code"></i>
+        </div>
+        <h3 class="text-lg font-bold text-white mb-2">Web Development</h3>
+        <p class="text-slate-400 text-xs leading-relaxed group-hover:text-blue-100">
+          Building responsive, modern, and high-performance websites customized to your needs using HTML, CSS, JS & Tailwind.
+        </p>
+      </div>
+
+      <div class="bg-slate-900 border border-slate-800 rounded-2xl p-6 text-center transition-all duration-300 hover:bg-blue-600 hover:border-blue-500 group cursor-pointer shadow-lg">
+        <div class="w-14 h-14 bg-blue-950 border border-blue-800/60 rounded-full flex items-center justify-center text-blue-400 text-2xl mx-auto mb-4 group-hover:bg-white group-hover:text-blue-600 transition-colors">
+          <i class="fa-solid fa-layer-group"></i>
+        </div>
+        <h3 class="text-lg font-bold text-white mb-2">UI/UX Implementation</h3>
+        <p class="text-slate-400 text-xs leading-relaxed group-hover:text-blue-100">
+          Converting Figma, Adobe XD, or UI designs into pixel-perfect, clean, and interactive web code.
+        </p>
+      </div>
+
+      <div class="bg-slate-900 border border-slate-800 rounded-2xl p-6 text-center transition-all duration-300 hover:bg-blue-600 hover:border-blue-500 group cursor-pointer shadow-lg">
+        <div class="w-14 h-14 bg-blue-950 border border-blue-800/60 rounded-full flex items-center justify-center text-blue-400 text-2xl mx-auto mb-4 group-hover:bg-white group-hover:text-blue-600 transition-colors">
+          <i class="fa-solid fa-mobile-screen-button"></i>
+        </div>
+        <h3 class="text-lg font-bold text-white mb-2">Responsive Design</h3>
+        <p class="text-slate-400 text-xs leading-relaxed group-hover:text-blue-100">
+          Ensuring your website looks perfectly aligned and beautiful across all devices (Mobile, Tablet & Desktop).
+        </p>
+      </div>
+
+      <div class="bg-slate-900 border border-slate-800 rounded-2xl p-6 text-center transition-all duration-300 hover:bg-blue-600 hover:border-blue-500 group cursor-pointer shadow-lg">
+        <div class="w-14 h-14 bg-blue-950 border border-blue-800/60 rounded-full flex items-center justify-center text-blue-400 text-2xl mx-auto mb-4 group-hover:bg-white group-hover:text-blue-600 transition-colors">
+          <i class="fa-solid fa-gauge-high"></i>
+        </div>
+        <h3 class="text-lg font-bold text-white mb-2">Bug Fixing & Speed</h3>
+        <p class="text-slate-400 text-xs leading-relaxed group-hover:text-blue-100">
+          Fixing layout bugs, improving page loading speed, and ensuring cross-browser compatibility.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<section id="contact" class="w-full pt-16 pb-0 px-6 border-t border-slate-800/60 scroll-mt-20">
+  <div class="max-w-6xl mx-auto">
+    <div class="text-center mb-12">
+      <span class="text-xs font-semibold uppercase tracking-widest text-blue-400 bg-blue-950/60 border border-blue-800/50 px-3.5 py-1.5 rounded-full inline-block mb-3">
+        CONTACT
+      </span>
+      <h2 class="text-3xl sm:text-4xl font-extrabold text-white">
+        Get in Touch With Me
+      </h2>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-start">
+      
+      <div class="space-y-6">
+        <p class="text-slate-300 text-sm leading-relaxed">
+          I'm always open to discuss exciting projects and new opportunities. Let's collaborate!
+        </p>
+
+        <div class="space-y-4 text-sm text-slate-300">
+          <div class="flex items-center gap-3">
+            <div class="w-10 h-10 bg-blue-950/80 border border-blue-800/50 rounded-xl flex items-center justify-center text-blue-400 shrink-0">
+              <i class="fa-solid fa-envelope"></i>
+            </div>
+            <span>eimanf749@gmail.com</span>
+          </div>
+
+          <div class="flex items-center gap-3">
+            <div class="w-10 h-10 bg-blue-950/80 border border-blue-800/50 rounded-xl flex items-center justify-center text-blue-400 shrink-0">
+              <i class="fa-solid fa-location-dot"></i>
+            </div>
+            <span>Kharian, Punjab, Pakistan</span>
+          </div>
+        </div>
+
+        <div class="flex gap-3 pt-2">
+  <a href="#" class="w-10 h-10 bg-slate-900 border border-slate-800 rounded-xl flex items-center justify-center text-slate-300 hover:text-blue-400 hover:border-blue-500/50 transition-all" title="GitHub">
+    <i class="fa-brands fa-github text-base"></i>
+  </a>
+  <a href="#" class="w-10 h-10 bg-slate-900 border border-slate-800 rounded-xl flex items-center justify-center text-slate-300 hover:text-blue-400 hover:border-blue-500/50 transition-all" title="LinkedIn">
+    <i class="fa-brands fa-linkedin-in text-base"></i>
+  </a>
+  <a href="mailto:eiman749@gmail.com" class="w-10 h-10 bg-slate-900 border border-slate-800 rounded-xl flex items-center justify-center text-slate-300 hover:text-blue-400 hover:border-blue-500/50 transition-all" title="Email">
+    <i class="fa-solid fa-envelope text-base"></i>
+  </a>
+</div>
+      </div>
+
+      <form class="bg-slate-900/90 border border-slate-800 rounded-2xl p-6 space-y-4 shadow-lg">
+        <div>
+          <input type="text" placeholder="Your Name" class="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-3 text-sm text-slate-200 placeholder-slate-500 focus:outline-none focus:border-blue-500 transition-colors" />
+        </div>
+        <div>
+          <input type="email" placeholder="Your Email" class="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-3 text-sm text-slate-200 placeholder-slate-500 focus:outline-none focus:border-blue-500 transition-colors" />
+        </div>
+        <div>
+          <textarea rows="4" placeholder="Your Message" class="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-3 text-sm text-slate-200 placeholder-slate-500 focus:outline-none focus:border-blue-500 transition-colors resize-none"></textarea>
+        </div>
+        <button type="submit" class="bg-blue-600 hover:bg-blue-700 text-white font-semibold text-sm px-6 py-3 rounded-xl transition-colors shadow-lg shadow-blue-600/30">
+          Send Message
+        </button>
+      </form>
+
+    </div>
+  </div>
+<footer style="width: 100vw !important; position: relative !important; left: 50% !important; transform: translateX(-50%) !important; background-color: #0f172a !important; box-shadow: 0 500px 0 500px #0f172a !important; margin-top: 3rem !important; border-top: 1px solid #1e293b !important;" class="text-white text-center py-6 px-4">
+  <div class="max-w-7xl mx-auto space-y-3">
+    
+    <h2 class="text-base font-bold tracking-wide text-white">Eiman Fatima</h2>
+
+    <div class="flex flex-wrap justify-center gap-5 text-xs text-slate-300 font-medium">
+      <a href="#home" class="hover:text-blue-400 transition-colors">Home</a>
+      <a href="#about" class="hover:text-blue-400 transition-colors">About</a>
+      <a href="#projects" class="hover:text-blue-400 transition-colors">Projects</a>
+      <a href="#services" class="hover:text-blue-400 transition-colors">Services</a>
+      <a href="#contact" class="hover:text-blue-400 transition-colors">Contact</a>
+    </div>
+
+    <div class="flex justify-center gap-4 text-slate-300 text-base pt-1">
+      <a href="https://github.com/Eiman-2026" target="_blank" class="hover:text-blue-400 transition-colors" title="GitHub">
+        <i class="fa-brands fa-github"></i>
+      </a>
+      <a href="https://www.linkedin.com/in/eiman-fatima-6563b5411" target="_blank" class="hover:text-blue-400 transition-colors" title="LinkedIn">
+        <i class="fa-brands fa-linkedin"></i>
+      </a>
+      <a href="mailto:eiman749@gmail.com" class="hover:text-blue-400 transition-colors" title="Email">
+        <i class="fa-solid fa-envelope"></i>
+      </a>
+    </div>
+
+    <div class="pt-2 border-t border-slate-800/80 w-full max-w-xs mx-auto">
+      <p class="text-[11px] text-slate-400">
+        © 2026 Eiman Fatima. All Rights Reserved.
+      </p>
+    </div>
+
+  </div>
+</footer>
